@@ -1,0 +1,25 @@
+.brand-img {
+    height: 100%;
+}
+/* .brand-card {
+    width: 400px;
+    height: 200px;
+    max-width: 400px;
+    max-height: 200px;
+} */
+
+.brand-img {
+    min-height: 100%;
+    max-width: 400px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    /* object-fit: cover;
+    object-position: 50% 50%; */
+}
+
+.brand-card:hover {
+    cursor: pointer;
+    transform: scale(102%, 102%);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}

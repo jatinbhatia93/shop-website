@@ -1,0 +1,80 @@
+
+.product-card {
+    display: flex;
+    justify-content: stretch;
+    align-self: stretch;
+}
+.product-card > * {
+    width: 100%;
+}
+.product-img {
+    max-height: 350px;
+    height: max-content;
+}
+.add-cart-btn {
+    background-color: var(--btn-corn);
+    border-color: var(--btn-corn);
+    color: var(--text-default);
+    font-weight: bold;
+    text-transform: uppercase;
+    /* box-shadow: 0 0.5rem 1.125rem -0.5rem var(--btn-green-box-shadow); */
+}
+.add-cart-btn:not(a):not(.p-disabled):focus {
+    box-shadow: none;
+}
+.add-cart-btn:not(a):not(.p-disabled):hover {
+    border-color: var(--btn-corn);
+    background: var(--btn-corn);
+    color: var(--text-default);
+    outline: 0 none;
+    /* box-shadow: 0 0.5rem 1.125rem -0.5rem var(--btn-green-box-shadow); */
+    transform: scale(101%);
+}
+
+.update-cart-btn {
+    background-color: var(--btn-pink);
+    border-color: var(--btn-pink);
+    color: var(--text-white);
+    font-weight: bold;
+    text-transform: uppercase;
+    /* box-shadow: 0 0.5rem 1.125rem -0.5rem var(--btn-green-box-shadow); */
+}
+.update-cart-btn:not(a):not(.p-disabled):focus {
+    box-shadow: none;
+}
+.update-cart-btn:not(a):not(.p-disabled):hover {
+    border-color: var(--btn-pink);
+    background: var(--btn-pink);
+    color: var(--text-white);
+    outline: 0 none;
+    /* box-shadow: 0 0.5rem 1.125rem -0.5rem var(--btn-green-box-shadow); */
+    transform: scale(101%);
+}
+.small-btn {
+    font-size: 0.75rem !important;
+    padding: 0.25rem !important;
+}
+.product-card .p-card {
+    position: relative;
+}
+.product-card .p-card-footer {
+    max-height: 3rem;
+    padding-bottom: 0.5rem;
+    position: absolute;
+    bottom: 1rem;
+}
+.product-card .p-card-title {
+    font-size: 1.25rem;
+}
+.product-card .p-card-subtitle {
+    font-size: 0.9rem;
+    padding-bottom: 3rem;
+}
+.quantity-text {
+    padding: 0.5rem;
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+.counter-wrapper .p-button-danger {
+    background-color: var(--danger);
+}

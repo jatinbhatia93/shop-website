@@ -1,4 +1,65 @@
-.App {
+@import url(primereact/resources/themes/saga-blue/theme.css);
+@import url(primereact/resources/primereact.min.css);
+@import url(primeicons/primeicons.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap');
+
+:root {
+  --text-green: rgb(48, 179, 0);
+  --btn-green: #B3E283;
+  --btn-green-box-shadow: rgb(48 179 0 / 50%);
+  --btn-orange: #F5A962;
+  --btn-orange-hover: #fe3638;
+  --btn-orange-box-shadow: rgb(254 105 106 / 90%);
+  --btn-corn: #ffec51;
+  --text-default: #4b566b;
+  --text-white: #ffffff;
+  --btn-pink: #EE2677;
+  --btn-brown: #5D534A;
+  --default-violet: rgb(109,99,255);
+  --danger: #F0120B;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: var(--text-default);
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.width-100p {
+  width: 100%;
+}
+
+.text-sm {
+  font-size: 0.75rem;
+}
+.text-md {
+  font-size: 1.25rem;
+}
+
+.text-lg {
+  font-size: 3.5rem;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.heading {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Junk Boilerplate */
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +96,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

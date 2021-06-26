@@ -1,0 +1,40 @@
+.logo {
+    height: 75px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* background: linear-gradient(180deg, rgba(255,255,255,0.15), rgba(255,255,255,0)); */
+    padding: 0;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 2;
+    /* box-shadow: 0 0.125rem 0.3rem -0.0625rem rgb(0 0 0 / 3%), 0 0.275rem 0.75rem -0.0625rem rgb(0 0 0 / 6%) !important; */
+    /* width: 100%; */
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a, a:hover, a:visited, a:focus {
+    color: inherit;
+    text-decoration: none;
+}
+.navbar .nav-buttons {
+    color: var(--default-violet);
+}
+.navbar .p-button.p-button-text:not(a):not(.p-disabled):hover {
+    background: rgb(109,99,255, 0.04);
+    color: var(--default-violet);;
+    border-color: transparent;
+}
+.navbar .p-button:focus, .navbar .p-button.p-button-text:not(a):not(.p-disabled):active {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: 0 0 0 0.2rem rgb(109,99,255, 0.5);;
+}

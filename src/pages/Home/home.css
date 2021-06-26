@@ -1,0 +1,46 @@
+.landing-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.svg-logo {
+    height: 80vh;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+.hero-section {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 5.5rem;
+    padding: 2em;
+    animation-name: easeIn;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    max-height: 80%;
+}
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80% {
+        transform: translateX(-1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes easeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
