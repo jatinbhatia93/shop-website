@@ -30,56 +30,61 @@ const NavBar = (props) => {
   const getBadge = () => {
     let initialValue = 0;
     let sum = props.cartItems.reduce(
-      (accumulator, currentValue) => accumulator + currentValue.quantity
-      , initialValue
-    )
-    if (sum) { 
-      return (
-        <Badge
-          value={sum}
-        ></Badge>
-      );
+      (accumulator, currentValue) => accumulator + currentValue.quantity,
+      initialValue
+    );
+    if (sum) {
+      return <Badge value={sum}></Badge>;
     }
   };
 
   const redirectToCart = () => {
     history.push("/cart");
-  }
+  };
   return (
     <React.Fragment>
-      <header className="navbar p-grid p-col-12">
-        <div className="p-offset-1 p-col-1">
-          <Link to="/">
-            <img
-              src="/assets/images/logo.png"
-              alt="Shree Bhatia Traders"
-              className="logo"
+      <nav className="navbar width-100p">
+        <div className="branding">
+          <div className="">
+            <Link to="/">
+              <img
+                src="/assets/images/logo.png"
+                alt="Shree Bhatia Traders"
+                className="logo"
+              />
+            </Link>
+          </div>
+          <div className="brand-name">Shree Bhatia Traders</div>
+        </div>
+
+        <div className="nav-links">
+          <div className="">
+            <Button
+              onClick={(event) => menu.current.toggle(event)}
+              className="p-button-text nav-buttons"
+            >
+              Brands
+              <Menu model={brandMenu} popup ref={menu} id="popup_menu" />
+            </Button>
+          </div>
+          <div className="">
+            <Button
+              className="p-button-text nav-buttons"
+              label="Products"
+              onClick={(event) => categoryMenu.current.toggle(event)}
             />
-          </Link>
-        </div>
-        <div className="brand-name p-col-3">Shree Bhatia Traders</div>
-        <div className="p-col-1 p-offset-4">
-          <Button
-            onClick={(event) => menu.current.toggle(event)}
-            className="p-button-text nav-buttons"
-          >
-            Brands
-            <Menu model={brandMenu} popup ref={menu} id="popup_menu" />
-          </Button>
-        </div>
-        <div className="p-col-1">
-            <Button className="p-button-text nav-buttons" label="Products" onClick={(event) => categoryMenu.current.toggle(event)} />
             <Menu model={category} popup ref={categoryMenu} id="popup_menu" />
+          </div>
+          <div className="" onClick={redirectToCart}>
+            <i
+              className="pi pi-shopping-cart p-mr-4 p-text-secondary p-overlay-badge cursor-pointer"
+              style={{ fontSize: "2rem" }}
+            >
+              {getBadge()}
+            </i>
+          </div>
         </div>
-        <div className="p-col-1" onClick={redirectToCart}>
-          <i
-            className="pi pi-shopping-cart p-mr-4 p-text-secondary p-overlay-badge cursor-pointer"
-            style={{ fontSize: "2rem" }}
-          >
-            {getBadge()}
-          </i>
-        </div>
-      </header>
+      </nav>
     </React.Fragment>
   );
 };

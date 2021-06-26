@@ -39,7 +39,7 @@ const ProductCard = (props) => {
             label="Update Qty."
             style={{ marginRight: ".25em" }}
             onClick={() => props.onQuantityChange(props.product, quantity || 1)}
-            className="update-cart-btn heading p-text-center p-button-raised p-button-rounded"
+            className="update-cart-btn h3 p-text-center p-button-raised p-button-rounded"
           />
         </React.Fragment>
       );
@@ -51,7 +51,7 @@ const ProductCard = (props) => {
           label="Add to Cart"
           style={{ marginRight: ".25em" }}
           onClick={() => props.onAddCart(props.product, quantity || 1)}
-          className="add-cart-btn heading p-text-center p-button-raised p-button-rounded"
+          className="add-cart-btn h3 p-text-center p-button-raised p-button-rounded"
         />
       </React.Fragment>
     );

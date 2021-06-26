@@ -1,20 +1,20 @@
 import React from 'react';
 import './home.css';
 
-import BrandsImg from '../../components/BrandList/brandsImg';
+import BrandsList from '../../components/BrandList/brandsList';
 
 const Home = () => {
     return ( 
         <React.Fragment>
-            <section className="p-grid landing-section">
-                <div className="p-col-6">
-                    <img src="assets/images/landing/specs.svg" alt="Books" className="svg-logo"/>
+            <div className="main-section">
+                <div className="main-section--logo">
+                    <img src="assets/images/landing/specs.svg" alt="Books" className="main-section--img"/>
                 </div>
-                <div className="hero-section p-col-6">
+                <div className="main-section--text">
                     Your Stationary Shop
                 </div>
-            </section>
-            <BrandsImg></BrandsImg>
+            </div>
+            <BrandsList></BrandsList>
         </React.Fragment>
      );
 }

@@ -40,7 +40,7 @@ const Cart = (props) => {
                 <React.Fragment key={index}>
                   <div className="p-grid">
                     <div className="p-col-2 p-mt-0 p-p-0">
-                      <img src={item.path} className="cart-img" />
+                      <img src={item.path} className="cart-img" alt={item.name} />
                     </div>
                     <div className="p-col-4 p-mt-4 p-p-0">{item.name}</div>
                     <div className="p-col-2 p-mt-4 p-p-0">{item.quantity}</div>

@@ -1,25 +1,29 @@
-.landing-section {
+.main-section {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
-.svg-logo {
-    height: 80vh;
+.main-section--logo, .main-section--text {
+    flex: 1 1 auto;
+    flex-basis: 40%;
+}
+.main-section--img {
+    width: 100%;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
 }
-.hero-section {
+.main-section--text {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 5.5rem;
-    padding: 2em;
+    font-size: 7vw;
     animation-name: easeIn;
     animation-duration: 1.5s;
     animation-timing-function: ease-in;
-    max-height: 80%;
+    max-width: 50%;
 }
 @keyframes moveInLeft {
     0% {
