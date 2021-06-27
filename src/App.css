@@ -7,7 +7,7 @@
   --text-green: rgb(48, 179, 0);
   --btn-green: #B3E283;
   --btn-green-box-shadow: rgb(48 179 0 / 50%);
-  --btn-orange: #F5A962;
+  --btn-orange: #FFC107;
   --btn-orange-hover: #fe3638;
   --btn-orange-box-shadow: rgb(254 105 106 / 90%);
   --btn-corn: #ffec51;
@@ -17,6 +17,7 @@
   --btn-brown: #5D534A;
   --default-violet: rgb(109,99,255);
   --danger: #F0120B;
+  --btn-cyan: #00D1B3;
 }
 
 body {
@@ -30,8 +31,30 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 700;
 }
 
+.flex-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.gap-1rem {
+  gap: 1rem;
+}
+
 .width-100p {
   width: 100%;
+}
+.width-80p {
+  width: 80%;
+}
+.width-60p {
+  width: 60%;
+}
+.width-40p {
+  width: 40%;
+}
+.width-20p {
+  width: 20%;
 }
 
 .text-sm {

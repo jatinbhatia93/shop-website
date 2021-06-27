@@ -1,7 +1,58 @@
 .cart-img {
-    width: auto;
+    max-width: 100%;
     max-height: 100px;
 }
 .subtotal-text {
     font-size: 2.5rem;
+}
+.item-list {
+    width: 100%;
+    max-height: 65vh;
+    overflow: auto;
+}
+.postion-relative {
+    position: relative;
+}
+.your-shopping-cart {
+    width: 100%;
+}
+/* .subtotal-card {
+    flex-basis: 40%;
+} */
+@media (min-width: 570px) {
+    .your-shopping-cart {
+        width: 50%;
+        margin-left: 15%;
+    }
+    .subtotal-card {
+        width: 30%;
+    }
+    .cart-details-container {
+        position: absolute;
+        bottom: 10%;
+    }
+    .get-quote {
+        width: 20%;
+        position: absolute;
+        right: 10%;
+        top: 25%;
+    }
+    .get-quote button {
+        border-radius: 35px;
+        padding: 0.5em;
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 569px) {
+    .get-quote {
+        position: fixed;
+        bottom: 0;
+        margin-top: 1rem;
+        width: 100%;
+    }
+    
+    .get-quote button {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
 }

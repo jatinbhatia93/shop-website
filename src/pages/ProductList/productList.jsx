@@ -16,7 +16,7 @@ const ProductList = (props) => {
     );
   }
   return (
-    <div className="p-p-5 products-wrapper">
+    <div className="p-p-5 flex-container gap-1rem width-100p p-jc-center">
       {list.map((product, index) => (
         <ProductCard
           key={index}
